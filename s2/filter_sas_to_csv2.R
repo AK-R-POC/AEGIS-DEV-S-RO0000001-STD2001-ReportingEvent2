@@ -4,6 +4,9 @@
 #Using custom logger to output high-level structured log for audittrail
 # 入力: <input.sas7bdat> <column_name> <search_value> <output_base> 
 # 出力: <output_base>.csv（中間ファイル）
+#
+#History:
+# 2026/05/03 Added comment
 #+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 ### Using Logger: Initialize ###
