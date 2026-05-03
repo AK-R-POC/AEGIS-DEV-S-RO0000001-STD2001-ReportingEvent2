@@ -4,6 +4,9 @@
 #!/usr/bin/env Rscript
 # 入力: <input.sas7bdat> <column> <value> <output_xpt>
 # 出力: <output_base>.xpt（中間ファイル）
+#
+#History:
+# 2026/05/03 Added comment
 #+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 ### Using Logger: Initialize ###
