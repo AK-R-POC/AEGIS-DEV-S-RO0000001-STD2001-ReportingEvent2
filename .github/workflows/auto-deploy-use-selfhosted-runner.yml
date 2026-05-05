@@ -336,6 +336,11 @@ jobs:
           fi
           echo "Copied files to $DEST_PATH." >> "$LOG_FILE"
 
+          # A.Kitagawa updated temporary on 2026/05/05 start
+          find $DEST_PATH -type d -print0 | xargs -0 setfacl -m m:rwx,d:m:rwx
+          find $DEST_PATH -type f -print0 | xargs -0 setfacl -m m:rw-
+          # A.Kitagawa updated temporary on 2026/05/05 end
+
           # 6. 初回配信時のみ、配送先ルートに .Rprofile.org を作成する
           #    二回目以降の配信では既存ファイルを維持し、再作成しない
           if [ ! -f "$DEST_PATH/.Rprofile.org" ]; then
