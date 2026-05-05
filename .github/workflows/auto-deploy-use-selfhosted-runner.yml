@@ -338,7 +338,7 @@ jobs:
 
           # A.Kitagawa updated temporary on 2026/05/05 start
           if ! find $DEST_PATH -type d -print0 | xargs -0 -r setfacl -m m:rwx,d:m:rwx || ! find $DEST_PATH -type f -print0 | xargs -0 -r setfacl -m m:rw-; then
-            echo "Error: failed to change mask."
+            echo "Error: failed to change mask." >> "$LOG_FILE"
             exit 1
           fi
           # A.Kitagawa updated temporary on 2026/05/05 end
