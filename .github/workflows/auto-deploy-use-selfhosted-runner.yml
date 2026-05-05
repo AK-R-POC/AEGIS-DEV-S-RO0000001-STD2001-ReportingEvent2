@@ -341,6 +341,7 @@ jobs:
             echo "Error: failed to change mask." >> "$LOG_FILE"
             exit 1
           fi
+          echo "Succeded to update mask(rwx/rw-) for deployed directories and files under $DEST_PATH." >> "$LOG_FILE"
           # A.Kitagawa updated temporary on 2026/05/05 end
 
           # 6. 初回配信時のみ、配送先ルートに .Rprofile.org を作成する
