@@ -1,10 +1,10 @@
 {
   "exclude_on_delete": {
     "files": [],
-    "dirs": ["log", "renv"]
+    "dirs": ["log"]
   },
   "exclude_on_copy": {
-    "files": [],
+    "files": ["qc_*.R"],
     "dirs": [".githooks", ".github", ".git"]
   }
 }
